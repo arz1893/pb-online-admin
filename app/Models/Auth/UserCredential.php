@@ -18,6 +18,7 @@ class UserCredential extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        'systemid',
         'name',
         'group_id',
         'username',
@@ -53,6 +54,6 @@ class UserCredential extends Authenticatable
     }
 
     public function getContact() {
-        return $this->hasMany(Contact::class);
+        return $this->hasOne(Contact::class, 'usercred_id', 'systemid');
     }
 }
