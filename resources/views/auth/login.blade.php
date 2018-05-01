@@ -45,7 +45,7 @@
                         <br />
                         <div class="center">
                             <div class='row'>
-                                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                                <button type='button' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
                             </div>
                         </div>
                     </form>
