@@ -23,7 +23,19 @@ class Contact extends Model
         'citizenid_type'
     ];
 
-    public function getUser() {
+    public function getUserCredential() {
         return $this->belongsTo(UserCredential::class, 'usercred_id', 'systemid');
+    }
+
+    public function getCustomers() {
+        return $this->hasMany(Customer::class);
+    }
+
+    public function getAdmins() {
+        return $this->hasMany(Admin::class);
+    }
+
+    public function getDrivers() {
+        return $this->hasMany(Driver::class);
     }
 }

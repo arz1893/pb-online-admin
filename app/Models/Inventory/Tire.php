@@ -51,4 +51,8 @@ class Tire extends Item
     public function getConstruction() {
         return $this->belongsTo(Construction::class, 'id_construction', 'systemid');
     }
+
+    public function getModel() {
+        return $this->belongsTo(ModelMerk::class, 'id_model', 'systemid');
+    }
 }

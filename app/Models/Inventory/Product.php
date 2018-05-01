@@ -16,4 +16,8 @@ class Product extends Model
         'active',
         'last_sync'
     ];
+
+    public function getOnHandStock() {
+        return $this->hasOne(OnHandStock::class);
+    }
 }

@@ -2,6 +2,8 @@
 
 namespace App\Models\Inventory;
 
+use App\Models\Sales\SalesInvoiceItem;
+use App\Models\Sales\SalesOrderItem;
 use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
@@ -26,5 +28,13 @@ class Item extends Model
 
     public function getItemCategoryTags() {
         return $this->hasMany(ItemCategoryTag::class);
+    }
+
+    public function getSalesInvoiceItems() {
+        return $this->hasMany(SalesInvoiceItem::class);
+    }
+
+    public function getSalesOrderItems() {
+        return $this->hasMany(SalesOrderItem::class);
     }
 }

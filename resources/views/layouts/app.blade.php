@@ -44,8 +44,8 @@
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="{{ route('login') }}" role="button">Login</a></li>
-            <li><a role="button">Register</a></li>
+            <li><a href="{{ route('login') }}" role="button">Login<i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a role="button">Register<i class="fas fa-user-plus"></i></a></li>
         </ul>
 
         <div id="main">
