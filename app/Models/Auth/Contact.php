@@ -8,6 +8,7 @@ class Contact extends Model
 {
     protected $table = 'contact';
     protected $primaryKey = 'systemid';
+    public $timestamps = false;
 
     protected $fillable = [
         'systemid',

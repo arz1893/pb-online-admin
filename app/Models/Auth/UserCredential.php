@@ -10,6 +10,7 @@ class UserCredential extends Authenticatable
     use Notifiable;
     protected $table = 'usercredential';
     protected $primaryKey = 'systemid';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.
@@ -18,7 +19,7 @@ class UserCredential extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'groupid',
+        'group_id',
         'username',
         'pwd',
         'isenable',

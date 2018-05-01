@@ -54,13 +54,20 @@
 
     </div>
 
+    <!-- Jquery -->
     <script src="{{ asset('js/jquery/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- Materialize -->
     <script src="{{ asset('js/materialize/materialize.min.js') }}" type="text/javascript"></script>
+    <!-- Axios -->
     <script src="{{ asset('js/axios/axios.min.js') }}" type="text/javascript"></script>
+    <!-- Lodash -->
     <script src="{{ asset('js/lodash/lodash.min.js') }}" type="text/javascript"></script>
+    <!-- Vue -->
     <script src="{{ asset('js/vue/vue.min.js') }}" type="text/javascript"></script>
+    <!-- Jquery Validation -->
+    <script src="{{ asset('js/jquery-validation/jquery.validate.min.js') }}" type="text/javascript"></script>
+    <!-- Materialize component init -->
     <script src="{{ asset('js/init_jquery.js') }}" type="text/javascript"></script>
-
     <!-- Other Scripts -->
     @stack('scripts')
 </body>

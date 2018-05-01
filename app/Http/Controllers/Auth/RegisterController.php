@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Models\Auth\Contact;
 use App\Models\Auth\UserCredential;
 use App\User;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -50,9 +52,12 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:usercredential,username',
             'password' => 'required|string|min:6|confirmed',
+            'birthdate' => 'required',
+            'phone' => 'required'
         ]);
     }
 
@@ -64,10 +69,23 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return UserCredential::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+        $userCredential = UserCredential::create([
+            'username' => $data['email'],
+            'pwd' => Hash::make($data['password']),
+            'group_id' => 2,
+            'isenable' => true,
+            'sys_created' => Carbon::now()
         ]);
+
+        Contact::create([
+            'usercred_id' => $userCredential->systemid,
+            'firstname' => $data['first_name'],
+            'lastname' => $data['last_name'],
+            'email' => $data['email'],
+            'phone' => $data['phone'],
+            'birthdate' => date('Y-m-d', strtotime($data['birthdate']))
+        ]);
+
+        return $userCredential;
     }
 }
