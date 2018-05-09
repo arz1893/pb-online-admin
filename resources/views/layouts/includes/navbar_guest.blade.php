@@ -19,10 +19,14 @@
 
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link" href="{{ route('login') }}">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">Register</a>
+                        <a class="nav-link" href="{{ route('register') }}">
+                            <i class="fa fa-user-plus"></i> Register
+                        </a>
                     </li>
                 @endguest
             </ul>

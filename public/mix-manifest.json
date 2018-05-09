@@ -1,6 +1,8 @@
 {
-    "/js/bootstrap/bootstrap.js": "/js/bootstrap/bootstrap.js",
+    "/js/bootstrap/app.js": "/js/bootstrap/app.js",
     "/css/bootstrap/app.css": "/css/bootstrap/app.css",
+    "/js/bootstrap/bootstrap.min.js": "/js/bootstrap/bootstrap.min.js",
+    "/js/popper/popper.min.js": "/js/popper/popper.min.js",
     "/js/axios/axios.min.js": "/js/axios/axios.min.js",
     "/js/lodash/lodash.min.js": "/js/lodash/lodash.min.js",
     "/js/jquery/jquery.min.js": "/js/jquery/jquery.min.js",

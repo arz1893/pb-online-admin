@@ -4,6 +4,13 @@
     <link rel="stylesheet" href="{{ asset('css/welcome_stylesheet.css') }}">
 @endpush
 
+@push('scripts')
+    <!-- Bootstrap -->
+    <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}" type="text/javascript"></script>
+    <!-- Popper.js -->
+    <script src="{{ asset('js/popper/popper.min.js') }}" type="text/javascript"></script>
+@endpush
+
 @section('content')
     <!-- Header with Background Image -->
     <header class="business-header">

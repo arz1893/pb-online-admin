@@ -12,6 +12,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -42,7 +43,7 @@
     <!-- Jquery -->
     {{--<script src="{{ asset('js/jquery/jquery.min.js') }}" type="text/javascript"></script>--}}
     <!-- Bootstrap -->
-    <script src="{{ mix('js/bootstrap/bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ mix('js/bootstrap/app.js') }}" type="text/javascript"></script>
     <!-- Axios -->
     {{--<script src="{{ asset('js/axios/axios.min.js') }}" type="text/javascript"></script>--}}
     <!-- Lodash -->
