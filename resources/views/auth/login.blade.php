@@ -1,57 +1,43 @@
 @extends('layouts.app')
 
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('css/login_stylesheet.css') }}">
-@endpush
-
 @section('content')
-    <div class="section"></div>
-    <main>
-        <div class="center">
-            <div class="section"></div>
-            <h5 class="indigo-text">Please, login into your account</h5>
-            <div class="section"></div>
-
-            <div class="container">
-                <div class="z-depth-1 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-
-                    <form class="col s12" method="post">
-                        <div class='row'>
-                            <div class='col s12'>
+    <div style="padding-top: 100px;">
+        @include('layouts.errors.error_list')
+        <div class="login-wrap align-items-center flex-wrap justify-content-center pd-20">
+            <div class="login-box bg-white box-shadow pd-30 border-radius-5">
+                <img src="{{ asset('default_images/login-img.png') }}" alt="login" class="login-img">
+                <h2 class="text-center mb-30">Login</h2>
+                <form method="post" action="{{ route('login') }}">
+                    @csrf
+                    <div class="input-group custom input-group-lg">
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                        <div class="input-group-append custom">
+                            <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="input-group custom input-group-lg">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="**********">
+                        <div class="input-group-append custom">
+                            <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <!--
+                                    use code for form submit
+                                    <input class="btn btn-outline-primary btn-lg btn-block" type="submit" value="Sign In">
+                                -->
+                                <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Sign In</button>
                             </div>
                         </div>
-
-                        <div class='row'>
-                            <div class='input-field col s12'>
-                                <input class='validate' type='email' name='email' id='email' />
-                                <label for='email'>
-                                    <i class="fas fa-envelope"></i> Enter your email
-                                </label>
-                            </div>
+                        <div class="col-sm-6">
+                            <div class="forgot-password padding-top-10"><a role="button">Forgot Password</a></div>
                         </div>
-
-                        <div class='row'>
-                            <div class='input-field col s12'>
-                                <input class='validate' type='password' name='password' id='password' />
-                                <label for='password'>
-                                    <i class="fas fa-lock"></i> Enter your password
-                                </label>
-                            </div>
-                            <label style='float: right;'>
-                                <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
-                            </label>
-                        </div>
-
-                        <br />
-                        <div class="center">
-                            <div class='row'>
-                                <button type='button' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
-            <a href="#!">Create account</a>
         </div>
-    </main>
+    </div>
+
 @endsection

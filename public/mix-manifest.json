@@ -1,6 +1,6 @@
 {
-    "/css/materialize/app.css": "/css/materialize/app.css",
-    "/js/materialize/materialize.min.js": "/js/materialize/materialize.min.js",
+    "/js/bootstrap/bootstrap.js": "/js/bootstrap/bootstrap.js",
+    "/css/bootstrap/app.css": "/css/bootstrap/app.css",
     "/js/axios/axios.min.js": "/js/axios/axios.min.js",
     "/js/lodash/lodash.min.js": "/js/lodash/lodash.min.js",
     "/js/jquery/jquery.min.js": "/js/jquery/jquery.min.js",

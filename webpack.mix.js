@@ -11,10 +11,10 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.copy('node_modules/materialize-css/dist/js/materialize.min.js', 'public/js/materialize/')
+mix.js('resources/assets/js/bootstrap.js', 'public/js/bootstrap')
     .copy('node_modules/axios/dist/axios.min.js', 'public/js/axios')
     .copy('node_modules/lodash/lodash.min.js', 'public/js/lodash')
     .copy('node_modules/jquery/dist/jquery.min.js', 'public/js/jquery')
     .copy('node_modules/vue/dist/vue.min.js', 'public/js/vue')
     .copy('node_modules/jquery-validation/dist/jquery.validate.min.js', 'public/js/jquery-validation/')
-    .sass('resources/assets/sass/app.scss', 'public/css/materialize/');
+    .sass('resources/assets/sass/app.scss', 'public/css/bootstrap/');
