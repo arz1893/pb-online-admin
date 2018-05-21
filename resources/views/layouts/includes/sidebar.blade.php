@@ -7,27 +7,17 @@
     <div class="menu-block">
         <div class="sidebar-menu">
             <ul id="accordion-menu">
-                <li class="dropdown">
-                    <a href="javascript:;" class="dropdown-toggle">
-                        <span class="fa fa-home"></span><span class="mtext">Home</span>
+                <li>
+                    <a href="{{ route('home') }}" class="dropdown-toggle no-arrow">
+                        <span class="fa fa-dashboard"></span><span class="mtext">Dashboard</span>
                     </a>
-                    <ul class="submenu">
-                        <li><a href="#!">Dashboard style 1</a></li>
-                        <li><a href="#!">Dashboard style 2</a></li>
-                    </ul>
                 </li>
                 <li class="dropdown">
                     <a href="javascript:;" class="dropdown-toggle">
-                        <span class="fa fa-pencil"></span><span class="mtext">Forms</span>
+                        <span class="fa fa-briefcase"></span><span class="mtext">Employees</span>
                     </a>
                     <ul class="submenu">
-                        <li><a href="#!">Form Basic</a></li>
-                        <li><a href="#!">Advanced Components</a></li>
-                        <li><a href="#!">Form Wizard</a></li>
-                        <li><a href="#!">HTML5 Editor</a></li>
-                        <li><a href="#!">Form Pickers</a></li>
-                        <li><a href="#!">Image Cropper</a></li>
-                        <li><a href="#!">Image Dropzone</a></li>
+                        <li><a href="{{ route('driver.index') }}">Driver</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

@@ -44,6 +44,8 @@
     {{--<script src="{{ asset('js/jquery/jquery.min.js') }}" type="text/javascript"></script>--}}
     <!-- Bootstrap -->
     <script src="{{ mix('js/bootstrap/app.js') }}" type="text/javascript"></script>
+    <!-- Template Script -->
+    <script src="{{ asset('js/template/script.js') }}" type="text/javascript"></script>
     <!-- Axios -->
     {{--<script src="{{ asset('js/axios/axios.min.js') }}" type="text/javascript"></script>--}}
     <!-- Lodash -->

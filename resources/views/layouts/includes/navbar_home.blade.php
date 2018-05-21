@@ -2,7 +2,7 @@
 <div class="header clearfix">
     <div class="header-right">
         <div class="brand-logo">
-            <a role="button">
+            <a href="{{ route('home') }}" role="button">
                 <img src="{{ asset('default_images/logo.png') }}" alt="" class="mobile-logo">
             </a>
         </div>
@@ -68,5 +68,3 @@
         </div>
     </div>
 </div>
-
-<div class="pre-loader"></div>

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/* Employee Driver Routes */
+Route::resource('driver', 'Employee\Driver\DriverController');
+/* end of employee driver routes */
