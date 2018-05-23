@@ -22,7 +22,7 @@ class UserCredential extends Authenticatable
         'name',
         'group_id',
         'username',
-        'pwd',
+        'password',
         'isenable',
         'expireddate',
         'notes',

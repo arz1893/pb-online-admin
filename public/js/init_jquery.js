@@ -3,4 +3,7 @@ $(document).ready(function () {
     $('.parallax').parallax();
     $('.datepicker').datepicker();
     $(".dropdown-trigger").dropdown();
+    $('#birthdate').datepicker({
+        autoClose: true
+    });
 });

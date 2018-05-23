@@ -7,5 +7,8 @@
     "/js/lodash/lodash.min.js": "/js/lodash/lodash.min.js",
     "/js/jquery/jquery.min.js": "/js/jquery/jquery.min.js",
     "/js/vue/vue.min.js": "/js/vue/vue.min.js",
-    "/js/jquery-validation/jquery.validate.min.js": "/js/jquery-validation/jquery.validate.min.js"
+    "/js/jquery-validation/jquery.validate.min.js": "/js/jquery-validation/jquery.validate.min.js",
+    "/css/air-datepicker/datepicker.min.css": "/css/air-datepicker/datepicker.min.css",
+    "/js/air-datepicker/datepicker.min.js": "/js/air-datepicker/datepicker.min.js",
+    "/js/air-datepicker/datepicker.en.js": "/js/air-datepicker/datepicker.en.js"
 }

@@ -52,8 +52,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
+            'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:usercredential,username',
             'password' => 'required|string|min:6|confirmed',
             'birthdate' => 'required',
@@ -71,7 +71,7 @@ class RegisterController extends Controller
     {
         $userCredential = UserCredential::create([
             'username' => $data['email'],
-            'pwd' => Hash::make($data['password']),
+            'password' => Hash::make($data['password']),
             'group_id' => 2,
             'isenable' => true,
             'sys_created' => Carbon::now()
@@ -79,10 +79,10 @@ class RegisterController extends Controller
 
         Contact::create([
             'usercred_id' => $userCredential->systemid,
-            'firstname' => $data['first_name'],
-            'lastname' => $data['last_name'],
+            'firstname' => $data['firstname'],
+            'lastname' => $data['lastname'],
             'email' => $data['email'],
-            'phone' => $data['phone'],
+            'phone' => $data['country_code'] . $data['phone'],
             'birthdate' => date('Y-m-d', strtotime($data['birthdate']))
         ]);
 

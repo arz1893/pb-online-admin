@@ -22,6 +22,8 @@
     <!-- Template -->
     <link href="{{ asset('css/template/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/template/media.css') }}" rel="stylesheet">
+    <!-- Air Datepicker -->
+    <link href="{{ asset('css/air-datepicker/datepicker.min.css') }}" rel="stylesheet">
     <!-- Other Stylesheets -->
     @stack('styles')
 </head>
@@ -40,20 +42,17 @@
     </div>
 
 
-    <!-- Jquery -->
-    {{--<script src="{{ asset('js/jquery/jquery.min.js') }}" type="text/javascript"></script>--}}
     <!-- Bootstrap -->
     <script src="{{ mix('js/bootstrap/app.js') }}" type="text/javascript"></script>
     <!-- Template Script -->
     <script src="{{ asset('js/template/script.js') }}" type="text/javascript"></script>
-    <!-- Axios -->
-    {{--<script src="{{ asset('js/axios/axios.min.js') }}" type="text/javascript"></script>--}}
-    <!-- Lodash -->
-    {{--<script src="{{ asset('js/lodash/lodash.min.js') }}" type="text/javascript"></script>--}}
     <!-- Vue -->
     <script src="{{ asset('js/vue/vue.min.js') }}" type="text/javascript"></script>
     <!-- Jquery Validation -->
     <script src="{{ asset('js/jquery-validation/jquery.validate.min.js') }}" type="text/javascript"></script>
+    <!-- Air Datepicker -->
+    <script src="{{ asset('js/air-datepicker/datepicker.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/air-datepicker/datepicker.en.js') }}" type="text/javascript"></script>
     <!-- Other Scripts -->
     @stack('scripts')
 </body>
