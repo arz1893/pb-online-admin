@@ -14,7 +14,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="javascript:;" class="dropdown-toggle">
-                        <span class="fa fa-briefcase"></span><span class="mtext">Employees</span>
+                        <span class="fa fa-users"></span><span class="mtext">Employees</span>
                     </a>
                     <ul class="submenu">
                         <li><a href="{{ route('driver.index') }}">Driver</a></li>
@@ -22,11 +22,10 @@
                 </li>
                 <li class="dropdown">
                     <a href="javascript:;" class="dropdown-toggle">
-                        <span class="fa fa-table"></span><span class="mtext">Tables</span>
+                        <span class="fa fa-money"></span><span class="mtext">Sales</span>
                     </a>
                     <ul class="submenu">
-                        <li><a href="#!">Basic Tables</a></li>
-                        <li><a href="#!">DataTables</a></li>
+                        <li><a href="{{ route('sales_order.index') }}">Sales Order</a></li>
                     </ul>
                 </li>
                 <li>

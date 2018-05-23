@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 /* Employee Driver Routes */
 Route::resource('driver', 'Employee\Driver\DriverController');
 /* end of employee driver routes */
+
+/* Sales Order Routes */
+Route::resource('sales_order', 'Sales\SalesOrder\SalesOrderController');
+/* end of sales order routes */
